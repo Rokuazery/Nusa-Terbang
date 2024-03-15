@@ -1,0 +1,105 @@
+ŠBù‚Aõ‚ñ{
+    "nodes": [
+        {
+            "id": "c7a5a0cd-eacb-4bab-830e-abe14ae46c5c",
+            "values": [
+                {
+                    "key": "inputAudioNodesValue",
+                    "value": "collectcoin-6075"
+                },
+                {
+                    "key": "inputData",
+                    "value": "Play One Shot"
+                },
+                {
+                    "key": "type",
+                    "value": "inputAudioNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "keyName",
+                    "value": "collectcoin-6075"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "0"
+                },
+                {
+                    "key": "refGO",
+                    "value": "This"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "0"
+                }
+            ],
+            "posX": 80.9373779296875,
+            "posY": 53.0,
+            "path": "Nodes/Api/Audio/NewAudioNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "d51cfcb5-76c6-4a0f-9236-ed4f5a6c764d",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "2b8df8d7-a952-48e0-8160-3438a6f91875",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "a62f741d-d8a2-4b75-a690-4c500f9f3deb",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "da5bfecc-47b8-40a3-b4fa-51b9bdc4b2ad",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "eventSubscribeNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "CoinsAudio"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "2"
+                }
+            ],
+            "posX": -216.06259155273438,
+            "posY": 49.0,
+            "path": "Nodes/Event/GlobalEvent/EventSubscribeNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "dcd32bd6-39a7-41fc-9830-8bd5dbb94927",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "208f78a8-d5e4-4d0f-af21-ac2a59ab9f06",
+                    "socketType": "StringOnly"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "149ddd1c-fa71-44fa-bacc-165c82b7bbc3",
+            "outputSocketId": "dcd32bd6-39a7-41fc-9830-8bd5dbb94927",
+            "inputSocketId": "d51cfcb5-76c6-4a0f-9236-ed4f5a6c764d",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        }
+    ]
+}
+CoinsCollectAudio=

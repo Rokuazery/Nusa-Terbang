@@ -1,0 +1,81 @@
+äBîÇAêÇå{
+    "nodes": [
+        {
+            "id": "f78a2985-405c-47d4-a570-cc6b0d1bbc4f",
+            "values": [
+                {
+                    "key": "lifecycleNodesValue",
+                    "value": "OnStart"
+                },
+                {
+                    "key": "type",
+                    "value": "lifecycleStartNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                }
+            ],
+            "posX": -254.3958282470703,
+            "posY": -261.1686096191406,
+            "path": "Nodes/Event/Lifecycle/NewLifecycleStartNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "44fb9da9-ff54-4270-8e78-0c8da7a8ff03",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "25ed14b8-1f30-4851-b82e-d721dccb950b",
+            "values": [
+                {
+                    "key": "questName",
+                    "value": "Collect 10x Coins with limited times"
+                },
+                {
+                    "key": "questId",
+                    "value": "4"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "4"
+                },
+                {
+                    "key": "type",
+                    "value": "startQuestNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 25.60415267944336,
+            "posY": -283.6685791015625,
+            "path": "Nodes/Api/Quest/StartQuestNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "8a58093e-e811-469d-b995-845092cfc088",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "7b0e4be5-54b6-4ec1-9ed5-073205e390e5",
+                    "socketType": "Flow"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "bd8f1277-c142-4d56-998c-bac881617f5f",
+            "outputSocketId": "44fb9da9-ff54-4270-8e78-0c8da7a8ff03",
+            "inputSocketId": "8a58093e-e811-469d-b995-845092cfc088",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        }
+    ]
+}
+Visual Graph=

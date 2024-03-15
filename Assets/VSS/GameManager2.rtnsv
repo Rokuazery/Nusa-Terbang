@@ -1,0 +1,217 @@
+äBù6ÇAô6Çï6{
+    "nodes": [
+        {
+            "id": "6574c412-054e-44fd-8bd8-f37e505c0767",
+            "values": [
+                {
+                    "key": "lifecycleNodesValue",
+                    "value": "OnStart"
+                },
+                {
+                    "key": "type",
+                    "value": "lifecycleStartNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                }
+            ],
+            "posX": -830.25,
+            "posY": 38.66670608520508,
+            "path": "Nodes/Event/Lifecycle/NewLifecycleStartNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "4de6070a-c2fe-499c-bc32-ccc9f9222dbe",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "89247f8a-416a-4f38-82ed-6d0b710c0f75",
+            "values": [
+                {
+                    "key": "inipath",
+                    "value": "VSS/TimerQuest"
+                },
+                {
+                    "key": "startVisualGraphPath",
+                    "value": ""
+                },
+                {
+                    "key": "type",
+                    "value": "startVisualGraphNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "refGO",
+                    "value": "This"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "0"
+                }
+            ],
+            "posX": -528.75,
+            "posY": 26.666641235351564,
+            "path": "Nodes/Api/Graph/StartVisualGraphNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "779a5a3b-6afa-4856-b430-f2cc42a3f92f",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "9a4c3ed4-b014-4081-9463-d26ffd909adf",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "e628dfe3-d9a7-474a-97f4-344468319cf3",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "4a53e2bd-5662-44e6-9383-ad6aacced611",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "ifNode"
+                },
+                {
+                    "key": "category",
+                    "value": "control"
+                }
+            ],
+            "posX": 60.75,
+            "posY": 32.166778564453128,
+            "path": "Nodes/Control/NewIfNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "9ff45f29-3277-465e-ba58-5c6be2f95ef9",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "34cb4659-f0dc-4e4c-aae7-8d2fe2b470d5",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "4b014ec1-c959-47dd-b201-681114e19f01",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "a7ce1c3d-2631-4240-84c7-5eccc40e5e18",
+                    "socketType": "Flow2"
+                }
+            ]
+        },
+        {
+            "id": "1ee80a9a-c17c-40d9-a49e-7e5f00b3a170",
+            "values": [
+                {
+                    "key": "questName",
+                    "value": "Talk to Orcbot for guidance"
+                },
+                {
+                    "key": "questId",
+                    "value": "3"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "3"
+                },
+                {
+                    "key": "type",
+                    "value": "startQuestNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 356.625,
+            "posY": -0.958282470703125,
+            "path": "Nodes/Api/Quest/StartQuestNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "bd05d2c4-8886-45d2-8d7f-c25033796f51",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "da2181e9-082a-4ad4-85dc-c44bd6fed515",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "f3b2cbd3-174e-4edd-9672-9ae492af5bc1",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getGlobalVariableNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "OrcQuest1"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "3"
+                }
+            ],
+            "posX": -250.1944580078125,
+            "posY": -58.83335876464844,
+            "path": "Nodes/Variable/Global/NewGetGlobalVariable",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "ecf634d3-b362-44cd-9f09-6bf567e9c9d2",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "208655e7-a19b-4b67-ba9c-f296d02174df",
+            "outputSocketId": "a7ce1c3d-2631-4240-84c7-5eccc40e5e18",
+            "inputSocketId": "bd05d2c4-8886-45d2-8d7f-c25033796f51",
+            "outputSocketType": "Flow2",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "a5589b9d-3585-4c67-8f3b-4042bbaf6497",
+            "outputSocketId": "4de6070a-c2fe-499c-bc32-ccc9f9222dbe",
+            "inputSocketId": "779a5a3b-6afa-4856-b430-f2cc42a3f92f",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "b38eda7c-1bae-47b0-a35b-eb3a278f24ae",
+            "outputSocketId": "e628dfe3-d9a7-474a-97f4-344468319cf3",
+            "inputSocketId": "34cb4659-f0dc-4e4c-aae7-8d2fe2b470d5",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "069ee103-ea49-4e8b-947f-1796a74232f8",
+            "outputSocketId": "ecf634d3-b362-44cd-9f09-6bf567e9c9d2",
+            "inputSocketId": "9ff45f29-3277-465e-ba58-5c6be2f95ef9",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        }
+    ]
+}
+GameManager2=

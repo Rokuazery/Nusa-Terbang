@@ -1,0 +1,416 @@
+ŠBëk‚Açk‚ãk{
+    "nodes": [
+        {
+            "id": "2d5e1bce-4573-465f-a512-39ed7fdd0288",
+            "values": [
+                {
+                    "key": "lifecycleNodesValue",
+                    "value": "OnStart"
+                },
+                {
+                    "key": "type",
+                    "value": "lifecycleStartNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                }
+            ],
+            "posX": -498.833251953125,
+            "posY": 95.12511444091797,
+            "path": "Nodes/Event/Lifecycle/NewLifecycleStartNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "d1fef61a-dd7c-4917-819a-3420bfdb2aad",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "832443ac-6867-4999-af28-37dba4d0f888",
+            "values": [
+                {
+                    "key": "boolValue",
+                    "value": "False"
+                },
+                {
+                    "key": "type",
+                    "value": "gameobjectSetactiveNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "refGO",
+                    "value": "Custom"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "1"
+                }
+            ],
+            "posX": 78.06233215332031,
+            "posY": 77.41278076171875,
+            "path": "Nodes/Api/Gameobject/GameobjectSetactiveNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "7ca04c9e-1f7b-4087-a70d-17486251fd1a",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "fdfb2b60-d98d-4899-804f-721df62e8ce4",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "f7691ed4-398e-49f9-8291-01ec382b65ff",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "90f4ca4c-1ec4-4e7b-9c0e-6f22823d5478",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "5cdd1ad6-724a-4916-ab68-60c223b69308",
+            "values": [
+                {
+                    "key": "boolValue",
+                    "value": "False"
+                },
+                {
+                    "key": "type",
+                    "value": "gameobjectSetactiveNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "refGO",
+                    "value": "Custom"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "1"
+                }
+            ],
+            "posX": 680.1455078125,
+            "posY": 79.91287231445313,
+            "path": "Nodes/Api/Gameobject/GameobjectSetactiveNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "ec33249b-9982-4d02-bffd-f071f270ce66",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "7b97c6fc-d07c-47de-b9e7-67acbb113090",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "021d3369-e737-4489-98ff-d1fdd0924075",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "6c951891-442f-4c9b-b084-4bf414ff2944",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "24762d34-7e29-4010-99b6-1e47ec949a66",
+            "values": [
+                {
+                    "key": "RefGOId",
+                    "value": "24762d34-7e29-4010-99b6-1e47ec949a66"
+                },
+                {
+                    "key": "type",
+                    "value": "referenceeGameobjectNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": -212.56263732910157,
+            "posY": -48.21228790283203,
+            "path": "Nodes/Api/Gameobject/RefrenceGameobjectNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "165bb837-2b56-4f18-b264-01bf74908091",
+                    "socketType": "Gameobject"
+                }
+            ]
+        },
+        {
+            "id": "c7143242-0de4-4c80-b45c-d8bc50df3e3b",
+            "values": [
+                {
+                    "key": "boolValue",
+                    "value": "False"
+                },
+                {
+                    "key": "type",
+                    "value": "gameobjectSetactiveNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "refGO",
+                    "value": "Custom"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "1"
+                }
+            ],
+            "posX": 1252.6455078125,
+            "posY": 82.82946014404297,
+            "path": "Nodes/Api/Gameobject/GameobjectSetactiveNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "37818569-b4da-4abe-bf43-73b1a4062752",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "5752efcc-1e69-474e-aa43-0a618adc728d",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "3607f24b-4265-438d-971a-1ac201078cbd",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "34251c83-4971-468d-bbf5-89523650a5b9",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "20f30751-167d-40c3-8c3a-ec51c3747001",
+            "values": [
+                {
+                    "key": "RefGOId",
+                    "value": "20f30751-167d-40c3-8c3a-ec51c3747001"
+                },
+                {
+                    "key": "type",
+                    "value": "referenceeGameobjectNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 398.47760009765627,
+            "posY": -52.380340576171878,
+            "path": "Nodes/Api/Gameobject/RefrenceGameobjectNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "ba3d4bd3-04e3-4fcf-8777-8751d9459d12",
+                    "socketType": "Gameobject"
+                }
+            ]
+        },
+        {
+            "id": "7396ffd2-3e2b-4ecc-8f56-3382de9ba92f",
+            "values": [
+                {
+                    "key": "RefGOId",
+                    "value": "7396ffd2-3e2b-4ecc-8f56-3382de9ba92f"
+                },
+                {
+                    "key": "type",
+                    "value": "referenceeGameobjectNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 970.3526611328125,
+            "posY": -47.58868408203125,
+            "path": "Nodes/Api/Gameobject/RefrenceGameobjectNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "5d200288-ef7a-45e8-bb9a-44d963edda41",
+                    "socketType": "Gameobject"
+                }
+            ]
+        },
+        {
+            "id": "586c6d59-1b28-4b52-8787-8507f6988359",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getGlobalVariableNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "isQuestTimer"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "6"
+                }
+            ],
+            "posX": -211.06256103515626,
+            "posY": 172.0,
+            "path": "Nodes/Variable/Global/NewGetGlobalVariable",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "15919dc1-e325-43b7-907f-2a70c9926896",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "d191d409-7f53-4bde-8c1a-1df41576f0c2",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getGlobalVariableNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "isQuestTimer"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "6"
+                }
+            ],
+            "posX": 387.9373779296875,
+            "posY": 189.0,
+            "path": "Nodes/Variable/Global/NewGetGlobalVariable",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "e282930c-48a5-4660-bbb5-6e34f89b22fa",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "afa4fb94-d8de-4fd2-9059-e2a103235b62",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getGlobalVariableNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "isQuestTimer"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "6"
+                }
+            ],
+            "posX": 963.9373779296875,
+            "posY": 190.0,
+            "path": "Nodes/Variable/Global/NewGetGlobalVariable",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "c2cb69a8-f57e-48d1-a083-3b71857bb5b9",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "bb3a8a36-5a21-4d0e-865d-0e1c8a2510dd",
+            "outputSocketId": "5d200288-ef7a-45e8-bb9a-44d963edda41",
+            "inputSocketId": "3607f24b-4265-438d-971a-1ac201078cbd",
+            "outputSocketType": "Gameobject",
+            "inputSocketType": "Gameobject"
+        },
+        {
+            "id": "1b5b00b5-8515-42e6-8061-cf6af8de78c6",
+            "outputSocketId": "165bb837-2b56-4f18-b264-01bf74908091",
+            "inputSocketId": "f7691ed4-398e-49f9-8291-01ec382b65ff",
+            "outputSocketType": "Gameobject",
+            "inputSocketType": "Gameobject"
+        },
+        {
+            "id": "8b8a328e-755e-4b5a-abe2-87c847c3edbe",
+            "outputSocketId": "ba3d4bd3-04e3-4fcf-8777-8751d9459d12",
+            "inputSocketId": "021d3369-e737-4489-98ff-d1fdd0924075",
+            "outputSocketType": "Gameobject",
+            "inputSocketType": "Gameobject"
+        },
+        {
+            "id": "14f21eda-7837-4b6c-bc8e-97fec4d78402",
+            "outputSocketId": "d1fef61a-dd7c-4917-819a-3420bfdb2aad",
+            "inputSocketId": "fdfb2b60-d98d-4899-804f-721df62e8ce4",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "5ca38232-8d1c-437b-9aee-eae6a5a1254a",
+            "outputSocketId": "15919dc1-e325-43b7-907f-2a70c9926896",
+            "inputSocketId": "7ca04c9e-1f7b-4087-a70d-17486251fd1a",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "370d7983-2e50-4abf-b94e-dad253b7b9a4",
+            "outputSocketId": "90f4ca4c-1ec4-4e7b-9c0e-6f22823d5478",
+            "inputSocketId": "7b97c6fc-d07c-47de-b9e7-67acbb113090",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "b5ef9255-12ba-47a2-9ecf-c18f4784c4ac",
+            "outputSocketId": "e282930c-48a5-4660-bbb5-6e34f89b22fa",
+            "inputSocketId": "ec33249b-9982-4d02-bffd-f071f270ce66",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "daa2aef8-12dd-419e-8e5b-864daaf1957f",
+            "outputSocketId": "6c951891-442f-4c9b-b084-4bf414ff2944",
+            "inputSocketId": "5752efcc-1e69-474e-aa43-0a618adc728d",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "1fed83d5-b068-4bd6-87fd-3763518b75d7",
+            "outputSocketId": "c2cb69a8-f57e-48d1-a083-3b71857bb5b9",
+            "inputSocketId": "37818569-b4da-4abe-bf43-73b1a4062752",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        }
+    ]
+}
+
+TimerQuest=

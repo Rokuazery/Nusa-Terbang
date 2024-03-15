@@ -1,0 +1,455 @@
+ŠBìr‚Aèr‚är{
+    "nodes": [
+        {
+            "id": "a7a284a5-a671-47da-a627-8f5b13d3ed1c",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "destroyGameobjectNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "refGO",
+                    "value": "This"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "0"
+                }
+            ],
+            "posX": 1823.85400390625,
+            "posY": 73.99999237060547,
+            "path": "Nodes/Api/Gameobject/DestroyGameobjectNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "85183d86-ad2e-46ba-b853-2be258c729fe",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "5f38fdc5-f095-4eb5-8162-c6828730273e",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "0e5c79ac-d49e-41c6-8dd4-85e7b6eaaf2f",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "7a8d3333-a3ab-45de-8243-abbdd0f8f269",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "1"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 220.9373016357422,
+            "posY": -34.0,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "78d2c0ff-9e6c-434d-b7e2-5c4f67bfdf04",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "309f5f4a-3316-4f70-8933-d60dc7ae1d4d",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "eventPublishNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "CoinsAudio"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "2"
+                }
+            ],
+            "posX": 1557.1873779296875,
+            "posY": 65.5,
+            "path": "Nodes/Event/GlobalEvent/EventPublishNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "",
+                    "socketType": "StringOnly"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "c4b99fd0-0073-486f-bc4c-a4906f89bc47",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "ifNode"
+                },
+                {
+                    "key": "category",
+                    "value": "control"
+                }
+            ],
+            "posX": 205.3858184814453,
+            "posY": 76.60528564453125,
+            "path": "Nodes/Control/NewIfNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "1be23b21-bcdc-40b5-b08b-0f8a0ebe40fe",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "36e749c5-d432-4003-b878-3091e342afae",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "22263ec7-d688-49e8-ba6b-c4868762ec93",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "428ef260-3d7d-4861-93ce-203f30c78a63",
+                    "socketType": "Flow2"
+                }
+            ]
+        },
+        {
+            "id": "55f32591-737a-45ad-9369-f2e77cf8146b",
+            "values": [
+                {
+                    "key": "itemName",
+                    "value": "Platinum Nusa Coins"
+                },
+                {
+                    "key": "itemId",
+                    "value": "4"
+                },
+                {
+                    "key": "amountItem",
+                    "value": "1"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "4"
+                },
+                {
+                    "key": "type",
+                    "value": "addItemNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 503.5107727050781,
+            "posY": 60.355377197265628,
+            "path": "Nodes/Api/Item/AddItemNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "c245f274-37b9-4e58-889e-4c8f57542d70",
+                    "socketType": "Data"
+                },
+                {
+                    "socketId": "ceab2aba-441b-4b88-848c-f33330a01162",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "26604ecf-0e54-4cdb-9d03-21aed4af5e21",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "4faf95c3-9d7e-4e82-808e-844b72da1892",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "onTriggerStayNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                },
+                {
+                    "key": "dropdownColValue",
+                    "value": "Player"
+                },
+                {
+                    "key": "dropdownGameobjectValue",
+                    "value": "This"
+                },
+                {
+                    "key": "colDropdown",
+                    "value": "0"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "0"
+                }
+            ],
+            "posX": -97.81932830810547,
+            "posY": 76.3322982788086,
+            "path": "Nodes/Event/Physics/OntriggerStayNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "9c956727-1ccf-4bce-9203-7c524e209502",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "a4aa47bf-5896-42e2-a7b4-b636654162ce",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "656021ec-9572-41c0-b2ea-d5ccbd71e1df",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "setTextNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "refGO",
+                    "value": "Custom"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "1"
+                }
+            ],
+            "posX": 1274.9375,
+            "posY": 68.0,
+            "path": "Nodes/Api/Text/SetTextNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "7e0d3c01-4f76-4803-b971-f34d145f8b16",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "cb40addd-33fc-48b7-8f57-9fe730cce8cf",
+                    "socketType": "StringData"
+                },
+                {
+                    "socketId": "d59bb816-aac8-430d-83eb-4a5975102ac3",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "92491798-af05-4170-93c3-238ef646f545",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "74d0caff-d195-433f-916d-4d67ebd23a56",
+            "values": [
+                {
+                    "key": "RefGOId",
+                    "value": "74d0caff-d195-433f-916d-4d67ebd23a56"
+                },
+                {
+                    "key": "type",
+                    "value": "referenceeGameobjectNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 1002.9374389648438,
+            "posY": -121.0,
+            "path": "Nodes/Api/Gameobject/RefrenceGameobjectNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "42b867eb-28bc-47c0-92a1-42b42c378e05",
+                    "socketType": "Gameobject"
+                }
+            ]
+        },
+        {
+            "id": "cd66eeb0-65cd-46bb-b411-bf94ff67c0d2",
+            "values": [
+                {
+                    "key": "itemName",
+                    "value": "Platinum Nusa Coins"
+                },
+                {
+                    "key": "itemId",
+                    "value": "4"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "4"
+                },
+                {
+                    "key": "type",
+                    "value": "getItemNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 757.9375,
+            "posY": 55.0,
+            "path": "Nodes/Api/Item/GetItemNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "52dce691-0d9c-4c78-a16f-23e3ada73cc1",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "4faa5278-36c7-4224-a4eb-19033625d49b",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "1bd2b198-6cde-4846-bea5-a52c581d0fef",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "156a9626-8b1c-4b00-a952-50b3ab402084",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "stringConversionNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 1002.9373779296875,
+            "posY": -5.0,
+            "path": "Nodes/Variable/String/StringConversionNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "e5bd7224-e9fb-451a-ae74-a6170d9bd08d",
+                    "socketType": "AllType"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "c98d0d22-e0fc-47fe-b786-19ffaa966042",
+                    "socketType": "StringOnly"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "427f992e-9336-4c29-89a3-d6509b63ff44",
+            "outputSocketId": "78d2c0ff-9e6c-434d-b7e2-5c4f67bfdf04",
+            "inputSocketId": "c245f274-37b9-4e58-889e-4c8f57542d70",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        },
+        {
+            "id": "c8ff7543-1562-4c58-889a-5d94f635ba83",
+            "outputSocketId": "22263ec7-d688-49e8-ba6b-c4868762ec93",
+            "inputSocketId": "ceab2aba-441b-4b88-848c-f33330a01162",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "870377be-3c73-4586-85cf-19fca35e4921",
+            "outputSocketId": "a4aa47bf-5896-42e2-a7b4-b636654162ce",
+            "inputSocketId": "36e749c5-d432-4003-b878-3091e342afae",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "f5f0c279-af5e-4ca4-aeb0-076abf814699",
+            "outputSocketId": "",
+            "inputSocketId": "85183d86-ad2e-46ba-b853-2be258c729fe",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "07b2d5e9-01da-4f4e-89c7-9e71f38bfafb",
+            "outputSocketId": "42b867eb-28bc-47c0-92a1-42b42c378e05",
+            "inputSocketId": "d59bb816-aac8-430d-83eb-4a5975102ac3",
+            "outputSocketType": "Gameobject",
+            "inputSocketType": "Gameobject"
+        },
+        {
+            "id": "096e83ee-60a0-4d63-90d9-c6f3000765f3",
+            "outputSocketId": "4faa5278-36c7-4224-a4eb-19033625d49b",
+            "inputSocketId": "7e0d3c01-4f76-4803-b971-f34d145f8b16",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "77d3ef76-84f2-48ed-a2c2-fa4cd0fe96a6",
+            "outputSocketId": "1bd2b198-6cde-4846-bea5-a52c581d0fef",
+            "inputSocketId": "e5bd7224-e9fb-451a-ae74-a6170d9bd08d",
+            "outputSocketType": "Data",
+            "inputSocketType": "AllType"
+        },
+        {
+            "id": "225430a8-4261-4d84-99ce-c0dfed7447e1",
+            "outputSocketId": "c98d0d22-e0fc-47fe-b786-19ffaa966042",
+            "inputSocketId": "cb40addd-33fc-48b7-8f57-9fe730cce8cf",
+            "outputSocketType": "StringOnly",
+            "inputSocketType": "StringData"
+        },
+        {
+            "id": "f02a500c-4947-4d04-b163-8ee1771a147c",
+            "outputSocketId": "26604ecf-0e54-4cdb-9d03-21aed4af5e21",
+            "inputSocketId": "52dce691-0d9c-4c78-a16f-23e3ada73cc1",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "c2c3dfef-0f36-4fb7-8b6c-8b1cf2e448d6",
+            "outputSocketId": "92491798-af05-4170-93c3-238ef646f545",
+            "inputSocketId": "",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        }
+    ]
+}
+CoinsCollection2=

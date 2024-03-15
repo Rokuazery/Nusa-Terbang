@@ -1,0 +1,187 @@
+ŠB’/‚AŽ/‚Š/{
+    "nodes": [
+        {
+            "id": "d0b67f73-aab3-4c04-a927-527df8636345",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "eventSubscribeNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "SetText"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "0"
+                }
+            ],
+            "posX": -192.88839721679688,
+            "posY": 110.1636962890625,
+            "path": "Nodes/Event/GlobalEvent/EventSubscribeNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "981cdb5d-88be-49d3-860b-31c0fe1d6866",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "d6f239a5-58f5-4604-815d-71efe8cfe0db",
+                    "socketType": "StringOnly"
+                }
+            ]
+        },
+        {
+            "id": "996f71f8-5800-4b97-90ac-39c27ccc9165",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "stringConversionNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 350.8821105957031,
+            "posY": 17.88143539428711,
+            "path": "Nodes/Variable/String/StringConversionNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "9a4affb4-94ee-41f2-89d3-23b304da2200",
+                    "socketType": "AllType"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "ba7189aa-c6a6-4745-84a5-f7531e1c41ff",
+                    "socketType": "StringOnly"
+                }
+            ]
+        },
+        {
+            "id": "f3b142b8-2ac2-4828-91f2-dae377f5f766",
+            "values": [
+                {
+                    "key": "itemName",
+                    "value": "Platinum Nusa Coins"
+                },
+                {
+                    "key": "itemId",
+                    "value": "4"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "4"
+                },
+                {
+                    "key": "type",
+                    "value": "getItemNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 104.20451354980469,
+            "posY": 104.16659545898438,
+            "path": "Nodes/Api/Item/GetItemNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "02cf3dda-b279-4bf4-858c-cd291ac1daca",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "4254248e-4d57-4893-9903-caded10d5400",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "16e2f920-4f1b-49c4-84c4-b5f0031fc5ac",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "51b54a6e-a33c-492f-bc47-9dc9a86ee172",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "setTextNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "refGO",
+                    "value": "This"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "0"
+                }
+            ],
+            "posX": 613.9373779296875,
+            "posY": 117.0,
+            "path": "Nodes/Api/Text/SetTextNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "81078b39-a073-4218-b071-c41c2c90a00a",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "8fb19361-f0bd-4bca-ac4e-083cad067015",
+                    "socketType": "StringOnly"
+                },
+                {
+                    "socketId": "7f51350a-4fd5-454f-82b2-0d973d35b2a8",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "b42fda29-8069-477c-81a6-be2a12fc230a",
+                    "socketType": "Flow"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "8bbdb82d-0b74-4f19-b280-64a8938b4ee1",
+            "outputSocketId": "981cdb5d-88be-49d3-860b-31c0fe1d6866",
+            "inputSocketId": "02cf3dda-b279-4bf4-858c-cd291ac1daca",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "8a8973cf-ead6-49c3-be13-80abebed4c6e",
+            "outputSocketId": "16e2f920-4f1b-49c4-84c4-b5f0031fc5ac",
+            "inputSocketId": "9a4affb4-94ee-41f2-89d3-23b304da2200",
+            "outputSocketType": "Data",
+            "inputSocketType": "AllType"
+        },
+        {
+            "id": "c52a582a-4a0c-4cc7-a12b-2682ded6f41c",
+            "outputSocketId": "4254248e-4d57-4893-9903-caded10d5400",
+            "inputSocketId": "81078b39-a073-4218-b071-c41c2c90a00a",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "d90dc21d-d226-4fb0-b740-0af6bd7d6696",
+            "outputSocketId": "ba7189aa-c6a6-4745-84a5-f7531e1c41ff",
+            "inputSocketId": "8fb19361-f0bd-4bca-ac4e-083cad067015",
+            "outputSocketType": "StringOnly",
+            "inputSocketType": "StringOnly"
+        }
+    ]
+}
+
+ScoreText2=

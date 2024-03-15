@@ -1,0 +1,81 @@
+ŠBâ‚AÞ‚Ú{
+    "nodes": [
+        {
+            "id": "3f42af47-6618-41a0-8c6b-41cad1223bcd",
+            "values": [
+                {
+                    "key": "questName",
+                    "value": "Collect Coins"
+                },
+                {
+                    "key": "questId",
+                    "value": "1"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "1"
+                },
+                {
+                    "key": "type",
+                    "value": "startQuestNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 83.93743896484375,
+            "posY": 16.0,
+            "path": "Nodes/Api/Quest/StartQuestNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "e4c80e2d-ccf2-4957-8c4a-48e5b539e533",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "49281dc6-48cd-441c-aa8f-1808c9fe92d7",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "76b85770-8cb9-4b59-a6cf-92b03e705300",
+            "values": [
+                {
+                    "key": "lifecycleNodesValue",
+                    "value": "OnStart"
+                },
+                {
+                    "key": "type",
+                    "value": "lifecycleStartNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                }
+            ],
+            "posX": -221.06256103515626,
+            "posY": 38.0,
+            "path": "Nodes/Event/Lifecycle/NewLifecycleStartNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "6c5568bb-fcda-4ada-9328-f32fdd309760",
+                    "socketType": "Flow"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "128f713f-6ab1-4577-a5a3-3859f12ed010",
+            "outputSocketId": "6c5568bb-fcda-4ada-9328-f32fdd309760",
+            "inputSocketId": "e4c80e2d-ccf2-4957-8c4a-48e5b539e533",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        }
+    ]
+}
+QuestCollectCoins=

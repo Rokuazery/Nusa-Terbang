@@ -1,0 +1,204 @@
+ŠBÉ3‚AÅ3‚Á3{
+    "nodes": [
+        {
+            "id": "aaa931fd-f37a-4af3-aa22-fcc02bfac04c",
+            "values": [
+                {
+                    "key": "lifecycleNodesValue",
+                    "value": "OnStart"
+                },
+                {
+                    "key": "type",
+                    "value": "lifecycleStartNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                }
+            ],
+            "posX": 186.12814331054688,
+            "posY": -0.3323974609375,
+            "path": "Nodes/Event/Lifecycle/NewLifecycleStartNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "7a2a3e6c-b381-4cb1-8e23-d0f824af98a6",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "f7f0066c-af8b-4383-859b-9111b0d73856",
+            "values": [
+                {
+                    "key": "questName",
+                    "value": "Talk to Monke"
+                },
+                {
+                    "key": "questId",
+                    "value": "0"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "0"
+                },
+                {
+                    "key": "type",
+                    "value": "startQuestNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 475.5918273925781,
+            "posY": -23.702468872070314,
+            "path": "Nodes/Api/Quest/StartQuestNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "76ebdcb0-7d73-4096-bf47-70d044749fc1",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "9196dfb1-4f36-4c1e-aec0-ab9a54abc96b",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "c4004f61-389e-4dcd-815e-4f869acce836",
+            "values": [
+                {
+                    "key": "boolValue",
+                    "value": "False"
+                },
+                {
+                    "key": "type",
+                    "value": "gameobjectSetactiveNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "refGO",
+                    "value": "Custom"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "1"
+                }
+            ],
+            "posX": 761.8345947265625,
+            "posY": -22.037582397460939,
+            "path": "Nodes/Api/Gameobject/GameobjectSetactiveNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "7464b9d8-82dc-44f5-89db-0296614d832a",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "3597ff7c-0269-4ed6-9b04-cb326bf83eee",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "6e532c77-6a6a-4dd7-8d80-9390bc41fd6c",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "3a35504c-e3a9-4d38-9a09-a82e35eae415",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "f6fae774-f248-4b1e-a676-64c287bad77d",
+            "values": [
+                {
+                    "key": "boolData",
+                    "value": "False"
+                },
+                {
+                    "key": "type",
+                    "value": "boolLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 472.4721984863281,
+            "posY": -138.74087524414063,
+            "path": "Nodes/Variable/Bool/NewBoolLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "6956a7c3-c037-49a8-81af-63203bb9a131",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "1b33df1f-ad4c-4b2f-8ab8-6c7d271ad585",
+            "values": [
+                {
+                    "key": "RefGOId",
+                    "value": "1b33df1f-ad4c-4b2f-8ab8-6c7d271ad585"
+                },
+                {
+                    "key": "type",
+                    "value": "referenceeGameobjectNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 472.4739685058594,
+            "posY": -256.62042236328127,
+            "path": "Nodes/Api/Gameobject/RefrenceGameobjectNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "ca4c906f-89da-4f49-9687-6e42f0d1125a",
+                    "socketType": "Gameobject"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "a8a09c3c-3bd5-4d38-9615-c97afd691adc",
+            "outputSocketId": "6956a7c3-c037-49a8-81af-63203bb9a131",
+            "inputSocketId": "7464b9d8-82dc-44f5-89db-0296614d832a",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "03860d0d-39ea-4f27-848c-9c51d0fc611b",
+            "outputSocketId": "ca4c906f-89da-4f49-9687-6e42f0d1125a",
+            "inputSocketId": "6e532c77-6a6a-4dd7-8d80-9390bc41fd6c",
+            "outputSocketType": "Gameobject",
+            "inputSocketType": "Gameobject"
+        },
+        {
+            "id": "7fd76925-81c6-47e4-8929-7cb5dc20d0cf",
+            "outputSocketId": "9196dfb1-4f36-4c1e-aec0-ab9a54abc96b",
+            "inputSocketId": "3597ff7c-0269-4ed6-9b04-cb326bf83eee",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "d98ad14d-277c-40f4-b93d-25521ed0d56b",
+            "outputSocketId": "7a2a3e6c-b381-4cb1-8e23-d0f824af98a6",
+            "inputSocketId": "76ebdcb0-7d73-4096-bf47-70d044749fc1",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        }
+    ]
+}
+GameManager=

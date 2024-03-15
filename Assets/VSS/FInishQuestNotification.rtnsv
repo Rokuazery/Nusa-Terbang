@@ -1,0 +1,145 @@
+ŠBä#‚Aà#‚Ü#{
+    "nodes": [
+        {
+            "id": "1f05ed1d-92c0-4f55-a471-2ce9dad53b52",
+            "values": [
+                {
+                    "key": "lifecycleNodesValue",
+                    "value": "OnStart"
+                },
+                {
+                    "key": "type",
+                    "value": "lifecycleStartNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                }
+            ],
+            "posX": -129.06259155273438,
+            "posY": 22.0,
+            "path": "Nodes/Event/Lifecycle/NewLifecycleStartNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "59dc2ee3-78aa-4eb1-90b2-7e76abe2de8b",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "8cfd2766-155f-4aa9-bff0-6ebe04e7d4b0",
+            "values": [
+                {
+                    "key": "stringValue",
+                    "value": "Quest Completed!"
+                },
+                {
+                    "key": "type",
+                    "value": "stringLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": -128.06259155273438,
+            "posY": -68.0,
+            "path": "Nodes/Variable/String/NewStringLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "155b297b-bcc8-4a2e-b63f-95e4b30871f2",
+                    "socketType": "StringData"
+                }
+            ]
+        },
+        {
+            "id": "bde67a20-35de-40c6-a19a-0b7e379277e9",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "notificationDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 203.9373779296875,
+            "posY": -16.0,
+            "path": "Nodes/Api/Popup/NewNotificationDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "6107c66a-a7c6-49b6-938a-4ed3db4befcd",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "fde61ef8-db92-46fb-b982-4486146c483d",
+                    "socketType": "StringOnly"
+                },
+                {
+                    "socketId": "",
+                    "socketType": "Data"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "81c6c553-5202-429f-a984-009e572486bb",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "565f50cb-4b01-418f-ab52-0a2f62e896ee",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "2"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": -129.06268310546876,
+            "posY": 117.0,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "acfbd5b2-fd9a-4f39-8af3-4048784b4358",
+                    "socketType": "Data"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "7270eeb2-47e9-4daa-a4e3-8fe8af1b16f9",
+            "outputSocketId": "59dc2ee3-78aa-4eb1-90b2-7e76abe2de8b",
+            "inputSocketId": "6107c66a-a7c6-49b6-938a-4ed3db4befcd",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "1af47c28-15fd-46cb-be98-d64b43453d0f",
+            "outputSocketId": "155b297b-bcc8-4a2e-b63f-95e4b30871f2",
+            "inputSocketId": "fde61ef8-db92-46fb-b982-4486146c483d",
+            "outputSocketType": "StringData",
+            "inputSocketType": "StringOnly"
+        },
+        {
+            "id": "446b742d-f572-4e60-8233-efe3c9d40267",
+            "outputSocketId": "acfbd5b2-fd9a-4f39-8af3-4048784b4358",
+            "inputSocketId": "",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        }
+    ]
+}
+FInishQuestNotification=

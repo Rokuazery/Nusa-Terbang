@@ -1,0 +1,126 @@
+ŠB®‚Aª‚¦{
+    "nodes": [
+        {
+            "id": "2f839188-8434-400c-b751-f994f38f1c13",
+            "values": [
+                {
+                    "key": "inputGetKeyNodesValue",
+                    "value": "Z"
+                },
+                {
+                    "key": "type",
+                    "value": "inputGetKeyNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "25"
+                }
+            ],
+            "posX": -92.56251525878906,
+            "posY": 56.500099182128909,
+            "path": "Nodes/Event/Input/NewInputGetKeyNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "8a8555ee-44a3-497c-a108-ea85d852dec5",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "ed282460-6570-4737-986c-63b4abc0eb50",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "15e2140e-0939-4bb5-9260-619c50e3b178",
+            "values": [
+                {
+                    "key": "itemName",
+                    "value": "Nusa Coins"
+                },
+                {
+                    "key": "itemId",
+                    "value": "0"
+                },
+                {
+                    "key": "amountItem",
+                    "value": "1"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "0"
+                },
+                {
+                    "key": "type",
+                    "value": "getItemNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 196.93748474121095,
+            "posY": 39.50010681152344,
+            "path": "Nodes/Api/Item/GetItemNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "0db52039-f36f-4d1e-9d90-6a19b250633c",
+                    "socketType": "Data"
+                },
+                {
+                    "socketId": "7789ae91-d19e-4637-93e5-2892b40efbd7",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "8007842c-36ee-4bc0-96d2-3d42a6a9ca73",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "13c096c0-baa5-4ae7-a0c9-bcf5de85a6f1",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "1"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": -97.06259155273438,
+            "posY": -43.0,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "fbc359c3-b2e9-487e-acf1-232c3e43f09f",
+                    "socketType": "Data"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "077aae36-a8f8-468f-86dd-b470524d0947",
+            "outputSocketId": "fbc359c3-b2e9-487e-acf1-232c3e43f09f",
+            "inputSocketId": "0db52039-f36f-4d1e-9d90-6a19b250633c",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        }
+    ]
+}
+
+DebugCoins=

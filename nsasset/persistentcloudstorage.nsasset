@@ -1,0 +1,45 @@
+{
+  "version": 15,
+  "data": [
+    {
+      "key": "MonkeQuest1",
+      "type": 2,
+      "value": "False"
+    },
+    {
+      "key": "MonkeQuest2",
+      "type": 2,
+      "value": "True"
+    },
+    {
+      "key": "MonkeQuest3",
+      "type": 2,
+      "value": "False"
+    },
+    {
+      "key": "OrcQuest1",
+      "type": 2,
+      "value": "False"
+    },
+    {
+      "key": "BonusQuest",
+      "type": 2,
+      "value": "False"
+    },
+    {
+      "key": "OrcbotQuest2",
+      "type": 2,
+      "value": "False"
+    },
+    {
+      "key": "isQuestTimer",
+      "type": 2,
+      "value": "False"
+    },
+    {
+      "key": "isQuizTest",
+      "type": 2,
+      "value": "False"
+    }
+  ]
+}

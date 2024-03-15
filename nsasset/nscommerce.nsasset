@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "0",
+      "name": "Golden Sriwijaya Compass",
+      "shortDescription": null,
+      "description": "New Product Description",
+      "image": "Custom Asstets/LowPoly4/Legendary_Hoarder_Compass",
+      "itemIds": [
+        {
+          "id": "3",
+          "amount": 1
+        }
+      ],
+      "prices": [
+        {
+          "currency": "item",
+          "price": 100,
+          "id": 0
+        }
+      ]
+    }
+  ]
+}

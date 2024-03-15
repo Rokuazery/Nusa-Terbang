@@ -1,0 +1,2705 @@
+äB ‘ÇA≈‘Ç¿‘{
+    "nodes": [
+        {
+            "id": "38678726-8007-4e34-8380-6a3528e02ce6",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "standardDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog\",\"dialog\":[{\"name\":\"Popcorn Merchant\",\"text\":\"Why did the corn get an award? \"},{\"name\":\"Popcorn Merchant\",\"text\":\" Because it was \\\"corn-gratulations\\\" time!\"},{\"name\":\"Popcorn Merchant\",\"text\":\"Xixixixi\"}]}"
+                }
+            ],
+            "posX": 490.42218017578127,
+            "posY": -363.33331298828127,
+            "path": "Nodes/Api/Dialog/StandardDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "a1b89f02-f73b-46ad-9acf-dc3bf51bad4f",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "a3888517-85fc-41a5-b1ea-5a79b97f121f",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "5d84bcfd-b78d-4b87-bfd6-700cf7bad371",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "standardDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"You've shown resolve. Hand it over.\"}]}"
+                }
+            ],
+            "posX": 494.7554931640625,
+            "posY": 141.0,
+            "path": "Nodes/Api/Dialog/StandardDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "d99ddb16-240c-4e2a-a9bf-00dfc9ae9916",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "48dbef6f-d3fc-4c52-b6ed-fe353cc413b9",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "8210e019-0e49-4b8e-8216-377a629005bc",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "multipleChoiceDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog_multiple_choice\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"What can I do for you ?\"}],\"multipleChoice\":{\"name\":\"Black Market Merchant\",\"text\":\"....\",\"items\":[{\"value\":1,\"text\":\"Show me what you've got\"},{\"value\":2,\"text\":\"I'm up for putting my knowledge to the test\"},{\"value\":3,\"text\":\"Nothing particullar\"}]}}"
+                }
+            ],
+            "posX": 795.7554931640625,
+            "posY": 144.0,
+            "path": "Nodes/Api/Dialog/MultipleChoiceDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "c69ea0e0-e912-422c-8543-d0c4c11497cd",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "dfe2ee3b-8448-4c4b-a80e-ba0daf7341f1",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "6c490dca-50cb-4b80-bd14-5531ccb18794",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "f6b86a83-dff6-4269-8f10-3a2132a6d0a6",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "comparissonNode"
+                },
+                {
+                    "key": "category",
+                    "value": "math"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "Equal"
+                },
+                {
+                    "key": "opType",
+                    "value": "2"
+                },
+                {
+                    "key": "textOp",
+                    "value": "=="
+                }
+            ],
+            "posX": 1133.7554931640625,
+            "posY": 66.0,
+            "path": "Nodes/Math/Logic/NewComparissonNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "e9e26ba4-86f5-436f-8dec-afbeeb45e5d7",
+                    "socketType": "Data"
+                },
+                {
+                    "socketId": "3dae8bbc-9e47-4c6f-82b6-21574d7d2d62",
+                    "socketType": "Data2"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "aebf13e6-30b5-4fcb-b0da-98c1b4b7ad60",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "29206b9b-8895-4e5c-bb67-bacf6819747e",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "comparissonNode"
+                },
+                {
+                    "key": "category",
+                    "value": "math"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "Equal"
+                },
+                {
+                    "key": "opType",
+                    "value": "2"
+                },
+                {
+                    "key": "textOp",
+                    "value": "=="
+                }
+            ],
+            "posX": 1131.7554931640625,
+            "posY": -53.0,
+            "path": "Nodes/Math/Logic/NewComparissonNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "e66ef02e-fcf3-402d-8796-f323aecb60f6",
+                    "socketType": "Data"
+                },
+                {
+                    "socketId": "a767dd40-509f-458a-a467-715a3e4e50a8",
+                    "socketType": "Data2"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "cf0b445b-fdac-4cbe-b8b9-12b65b8e9543",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "6a5f183c-f68e-46f8-8237-04079b7f18a8",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "1"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 794.7555541992188,
+            "posY": 17.0,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "0f8dee99-28db-4f00-8fda-2d7931d69f05",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "7afb0fbf-73f0-467c-aac4-3a71aceb4b02",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "3"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 796.7555541992188,
+            "posY": -160.0,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "56a3e574-f545-47c0-9593-b9eeca1167c0",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "194a3b57-7301-43f3-a98d-61ee751c4051",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "2"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 797.7555541992188,
+            "posY": -75.0,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "d51f8467-cb26-4308-918b-60049a66318f",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "cafe1845-c71d-4dad-b6f2-cdad2dcf54ca",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "ifNode"
+                },
+                {
+                    "key": "category",
+                    "value": "control"
+                }
+            ],
+            "posX": 1485.7554931640625,
+            "posY": 70.0,
+            "path": "Nodes/Control/NewIfNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "73f6b808-ece8-48a7-a11b-7e8630654522",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "418bb8c6-719d-42f5-8a9f-df63ee97b392",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "d61bf6e4-e6ab-41b2-982f-25ced19914b9",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "4ece3411-9c49-42be-9c72-3483d49fe2e9",
+                    "socketType": "Flow2"
+                }
+            ]
+        },
+        {
+            "id": "5705b037-7589-4959-ae3f-176d593161b5",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "ifNode"
+                },
+                {
+                    "key": "category",
+                    "value": "control"
+                }
+            ],
+            "posX": 1486.7554931640625,
+            "posY": -50.0,
+            "path": "Nodes/Control/NewIfNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "8b5ea07d-d70b-42e0-93b5-702095191942",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "bb8e3f8e-53c9-45c9-8bf0-72ec3f88f2aa",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "d95ed59b-b5b8-4216-ac49-7d94b0646b27",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "0cef6ad2-5706-4ec1-a985-5d9aa536b28b",
+                    "socketType": "Flow2"
+                }
+            ]
+        },
+        {
+            "id": "134105a2-d3b6-4ad9-9312-046734c8325a",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "comparissonNode"
+                },
+                {
+                    "key": "category",
+                    "value": "math"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "Equal"
+                },
+                {
+                    "key": "opType",
+                    "value": "2"
+                },
+                {
+                    "key": "textOp",
+                    "value": "=="
+                }
+            ],
+            "posX": 1130.7554931640625,
+            "posY": -177.0,
+            "path": "Nodes/Math/Logic/NewComparissonNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "8d381707-da0d-42a7-afb1-83128525fd71",
+                    "socketType": "Data"
+                },
+                {
+                    "socketId": "b0ffe217-7ec4-4ce5-8ce9-276b4d0b4169",
+                    "socketType": "Data2"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "037930c5-5cfc-4063-a1c2-911562c89bb0",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "7beea10c-0dbd-48e3-8bc9-22c24f8e8a8f",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "standardDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"Let see what you've got..\"}]}"
+                }
+            ],
+            "posX": 1788.588623046875,
+            "posY": -81.66665649414063,
+            "path": "Nodes/Api/Dialog/StandardDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "7baf82bb-65ed-4328-aadd-fc135fed54aa",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "c6ceb5af-7b4f-4253-b6ac-ef1e1ee23698",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "bafa6459-9ff2-4eab-b4df-13355ce88134",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "multipleChoiceDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog_multiple_choice\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"First Test!\"}],\"multipleChoice\":{\"name\":\"Black Market Merchant\",\"text\":\"I'm tall when I'm young and short when I'm old. What am I?\",\"items\":[{\"value\":1,\"text\":\"A Candle\"},{\"value\":2,\"text\":\"A Tree\"},{\"value\":3,\"text\":\"A Building\"}]}}"
+                }
+            ],
+            "posX": 2046.75537109375,
+            "posY": -80.33332824707031,
+            "path": "Nodes/Api/Dialog/MultipleChoiceDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "7420da6d-e109-4b55-8d66-dd464b0b7f46",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "e91b3b0a-c737-43b2-9311-9bf05c752f2e",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "ba706f31-ab7c-48d5-a6cb-06f1c5f7cbde",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "c3fdd210-227c-4a16-91d3-544e1feffc3a",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "1"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 2044.255126953125,
+            "posY": -218.3333282470703,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "14cc4156-120c-4df6-a27f-dbe77615105e",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "aab0b04e-26cd-4e3a-8db7-96516064ea4b",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "multipleChoiceDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog_multiple_choice\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"Correct!\"},{\"name\":\"Black Market Merchant\",\"text\":\"Second Test\"}],\"multipleChoice\":{\"name\":\"Black Market Merchant\",\"text\":\"What comes once in a minute, twice in a moment, but never in a thousand years?\",\"items\":[{\"value\":1,\"text\":\"Laughter\"},{\"value\":2,\"text\":\"a breath\"},{\"value\":3,\"text\":\"The letter \\\"m\\\"\"}]}}"
+                }
+            ],
+            "posX": 2900.922119140625,
+            "posY": -77.0,
+            "path": "Nodes/Api/Dialog/MultipleChoiceDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "5b8747ea-6866-4521-a988-20c9f2a202fb",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "e668cdf8-4bb5-46d7-b298-1cfdeee831cc",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "f63dc851-c676-4914-bc0a-da1ce8fe9a5d",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "c895be68-c359-447e-95b1-b8b1991ca81a",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "standardDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"Beep Beep! Too bad.. try again\"}]}"
+                }
+            ],
+            "posX": 2905.25537109375,
+            "posY": -375.8332824707031,
+            "path": "Nodes/Api/Dialog/StandardDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "460827fd-eceb-4cca-a144-29b4bed6ad6e",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "80f470be-26b2-4132-bdcb-888cab524dd6",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "59e5e4a6-f0d7-47f3-b760-764b1e7c85a8",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "3"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 2908.422119140625,
+            "posY": -225.0,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "2f5ee746-3b59-49c0-b9b4-44df2fde7714",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "5806ee3f-f727-40c1-8e47-72ffb9961bd9",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "standardDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"Beep Beep! Too bad.. try again\"}]}"
+                }
+            ],
+            "posX": 3746.088623046875,
+            "posY": -354.99993896484377,
+            "path": "Nodes/Api/Dialog/StandardDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "72532b4d-2e9a-430f-9c40-984492efc9f3",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "50755f4b-3013-4d34-bfff-d299cedca502",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "cc313a9d-33a1-46cf-b238-4007de0833dc",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "multipleChoiceDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog_multiple_choice\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"Correct!\"},{\"name\":\"Black Market Merchant\",\"text\":\"Final Test\"}],\"multipleChoice\":{\"name\":\"Black Market Merchant\",\"text\":\"What can travel around the world while staying in a corner?\",\"items\":[{\"value\":1,\"text\":\"A globe\"},{\"value\":2,\"text\":\"A stamp.\"},{\"value\":3,\"text\":\"A plane\"}]}}"
+                }
+            ],
+            "posX": 3739.25537109375,
+            "posY": -76.16667175292969,
+            "path": "Nodes/Api/Dialog/MultipleChoiceDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "f434274c-2479-4f24-a49a-c3e70e5dfcc2",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "02960382-2ccb-4af9-8cd9-5821ba8ed661",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "14feabc4-c350-4a65-8512-02e7a192f749",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "40fb5a5c-3c11-4c9f-ac21-75b451bfa13e",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "comparissonNode"
+                },
+                {
+                    "key": "category",
+                    "value": "math"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "Equal"
+                },
+                {
+                    "key": "opType",
+                    "value": "2"
+                },
+                {
+                    "key": "textOp",
+                    "value": "=="
+                }
+            ],
+            "posX": 4052.08837890625,
+            "posY": -145.6666717529297,
+            "path": "Nodes/Math/Logic/NewComparissonNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "16cfd229-d811-4b64-abb0-dca9c73eeb05",
+                    "socketType": "Data"
+                },
+                {
+                    "socketId": "c8a147fe-7c93-442b-896c-cae751255c52",
+                    "socketType": "Data2"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "e9bd8382-7c28-4310-8978-4b0bb51f24a7",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "d3e23c84-24dc-47d8-b3c2-754299ef4b9e",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "ifNode"
+                },
+                {
+                    "key": "category",
+                    "value": "control"
+                }
+            ],
+            "posX": 4340.72509765625,
+            "posY": -45.99998474121094,
+            "path": "Nodes/Control/NewIfNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "86b5f906-bbe3-41da-a13f-d338379f343e",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "1299d58e-2c90-4844-b2ea-bbf5d9cb9798",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "1468925a-8a63-4baf-bfa7-bbd2cc6f8952",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "da98bf22-a38d-4fa9-988e-e6bda46aa40f",
+                    "socketType": "Flow2"
+                }
+            ]
+        },
+        {
+            "id": "4e12a120-83bd-46c6-8db4-8f7b38dcbdf8",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "2"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 3746.024658203125,
+            "posY": -224.00331115722657,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "180d0c55-f5bc-4290-a689-5dc618fcba5d",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "709840d6-d736-493d-adb0-6aaee129e709",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "standardDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"Beep Beep! Too bad.. try again\"}]}"
+                }
+            ],
+            "posX": 4696.92236328125,
+            "posY": -349.16656494140627,
+            "path": "Nodes/Api/Dialog/StandardDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "21a94e7a-ea1f-4010-ac0b-ed9d72ebffbc",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "405cac9b-4671-47ee-b1a7-c1e4c7ac116c",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "818166d1-26f5-4c5b-b994-49cb9b9629fd",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "standardDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"Well done strangers! You've completed all of test\"},{\"name\":\"Black Market Merchant\",\"text\":\"As a reward, here a bag of gold for ya!\"}]}"
+                }
+            ],
+            "posX": 4701.92236328125,
+            "posY": -78.33326721191406,
+            "path": "Nodes/Api/Dialog/StandardDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "0b8ad189-47d2-49d3-b83f-6f383692b155",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "f5ed1252-58b0-462d-81c5-13b37c520e74",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "0416c0a3-bd2d-4b01-b177-43528eb5fbe2",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "2"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 4698.10400390625,
+            "posY": 51.333335876464847,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "a9751265-a1b2-4510-a5f8-392eff82e5cb",
+            "values": [
+                {
+                    "key": "itemName",
+                    "value": "Token of shadow"
+                },
+                {
+                    "key": "itemId",
+                    "value": "1"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "1"
+                },
+                {
+                    "key": "type",
+                    "value": "getItemNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": -458.30560302734377,
+            "posY": 45.33348083496094,
+            "path": "Nodes/Api/Item/GetItemNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "7f077974-cbb6-40b2-b908-fe8cf7887e4b",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "c89a3eab-09f6-4ee4-99e0-8dd832d38e77",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "3069a48a-b884-4b38-be59-489328670d76",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "23bc07b8-d264-49f3-837f-914d8f665542",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "comparissonNode"
+                },
+                {
+                    "key": "category",
+                    "value": "math"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "Equal"
+                },
+                {
+                    "key": "opType",
+                    "value": "2"
+                },
+                {
+                    "key": "textOp",
+                    "value": "=="
+                }
+            ],
+            "posX": -174.9722442626953,
+            "posY": -102.99984741210938,
+            "path": "Nodes/Math/Logic/NewComparissonNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "ddd6797e-9f28-4c04-b5bc-c518ba69a56d",
+                    "socketType": "Data"
+                },
+                {
+                    "socketId": "15e649e1-3eaf-4c48-8514-a73c22835145",
+                    "socketType": "Data2"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "5b0c9a71-e821-4e89-88af-bf5f09a74a9d",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "764b2c31-fc1b-448f-a5fc-ae90e10a22db",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "1"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": -493.3056640625,
+            "posY": -125.49986267089844,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "98adf7b1-19c2-4ace-a261-a10f2b251156",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "8ca3a5ec-a455-4c26-bd57-a1c44521a03c",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "ifNode"
+                },
+                {
+                    "key": "category",
+                    "value": "control"
+                }
+            ],
+            "posX": 160.86102294921876,
+            "posY": 64.50010681152344,
+            "path": "Nodes/Control/NewIfNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "cc39439c-60db-4f8c-90b0-12b4ffac11c3",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "4580e6c1-6533-436e-90d3-9c94b18b0364",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "c1b6db1d-9729-4549-9052-ea7b1d16c656",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "68c7eeb5-d285-4326-8a51-1f84b8a76936",
+                    "socketType": "Flow2"
+                }
+            ]
+        },
+        {
+            "id": "1ddae789-e2b8-4762-81c5-f3fcdcb3fd5a",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "ifNode"
+                },
+                {
+                    "key": "category",
+                    "value": "control"
+                }
+            ],
+            "posX": 1482.52880859375,
+            "posY": -164.66555786132813,
+            "path": "Nodes/Control/NewIfNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "0ee6033d-982c-4de4-9c62-ae9c99387377",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "2c4c588d-1673-4e31-8f64-f67c43b380fa",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "2a7ee367-738b-4c90-8b6b-ca90cae17d2c",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "07e66e91-b0d8-474a-a029-67d18fb252f8",
+                    "socketType": "Flow2"
+                }
+            ]
+        },
+        {
+            "id": "5794275a-4f1e-40e1-8c76-b50fd1fe8cd0",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "comparissonNode"
+                },
+                {
+                    "key": "category",
+                    "value": "math"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "Equal"
+                },
+                {
+                    "key": "opType",
+                    "value": "2"
+                },
+                {
+                    "key": "textOp",
+                    "value": "=="
+                }
+            ],
+            "posX": 2330.862060546875,
+            "posY": -141.33221435546876,
+            "path": "Nodes/Math/Logic/NewComparissonNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "cba72f35-ca56-459a-a731-e238a1f23b7d",
+                    "socketType": "Data"
+                },
+                {
+                    "socketId": "9e4bdd6f-a430-4f74-ae40-cedb861548b1",
+                    "socketType": "Data2"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "1b6da56b-b9a2-4ad9-b1e2-5d655d1567c8",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "9a6050ed-0a0a-4fe5-a3a7-abf5e2f50f2b",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "ifNode"
+                },
+                {
+                    "key": "category",
+                    "value": "control"
+                }
+            ],
+            "posX": 2598.362060546875,
+            "posY": -46.33222961425781,
+            "path": "Nodes/Control/NewIfNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "919ca7b9-7b71-4095-884a-f233e3e026da",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "00a7ea0f-68d1-451b-9cd4-60af795b22a2",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "1a256f03-278a-41fb-90a9-292140a14977",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "99ce2c02-5707-4b2a-8f73-f3f5540b1091",
+                    "socketType": "Flow2"
+                }
+            ]
+        },
+        {
+            "id": "e919ca7a-b220-4232-a4bf-dcdce3b67df3",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "comparissonNode"
+                },
+                {
+                    "key": "category",
+                    "value": "math"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "Equal"
+                },
+                {
+                    "key": "opType",
+                    "value": "2"
+                },
+                {
+                    "key": "textOp",
+                    "value": "=="
+                }
+            ],
+            "posX": 3180.02880859375,
+            "posY": -146.3321990966797,
+            "path": "Nodes/Math/Logic/NewComparissonNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "a27bb6c5-9e99-402f-b1c0-b71a4c356179",
+                    "socketType": "Data"
+                },
+                {
+                    "socketId": "efc122e7-a1a3-4c73-a67c-6736da90cf92",
+                    "socketType": "Data2"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "3809e094-fc4f-4cfc-8ec0-7a1f93170ed6",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "aa19fcd2-a725-43b6-b4be-7ce91aad0f3d",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "ifNode"
+                },
+                {
+                    "key": "category",
+                    "value": "control"
+                }
+            ],
+            "posX": 3446.694580078125,
+            "posY": -42.9989013671875,
+            "path": "Nodes/Control/NewIfNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "6d36db6a-af85-4b83-b937-91bef868cb96",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "378fb1bb-7a79-467d-aeca-c022ac11d3e1",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "5f772760-23ec-4b8a-bd73-eff9ac377f98",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "b42b4291-59c6-4d3c-b444-07341e5a7e30",
+                    "socketType": "Flow2"
+                }
+            ]
+        },
+        {
+            "id": "0a52e960-e5e8-4d5f-9a31-18b1bf644360",
+            "values": [
+                {
+                    "key": "itemName",
+                    "value": "Nusa Coins"
+                },
+                {
+                    "key": "itemId",
+                    "value": "0"
+                },
+                {
+                    "key": "amountItem",
+                    "value": "1"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "0"
+                },
+                {
+                    "key": "type",
+                    "value": "addItemNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 5287.52783203125,
+            "posY": -53.83198547363281,
+            "path": "Nodes/Api/Item/AddItemNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "005bb5ef-3156-482b-9015-be8e85d641ab",
+                    "socketType": "Data"
+                },
+                {
+                    "socketId": "ddd450ba-febe-42ac-aa58-65b86c14e94c",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "4953a5f9-5147-4a48-b626-a5ddc965516d",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "1a020c60-d359-410a-aa5b-d7b3d7052ace",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getPlayerNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "indexPosValue",
+                    "value": "0"
+                },
+                {
+                    "key": "posaValue",
+                    "value": "Position X"
+                },
+                {
+                    "key": "indexMovValue",
+                    "value": "1"
+                },
+                {
+                    "key": "movValue",
+                    "value": "Stop"
+                }
+            ],
+            "posX": -177.06283569335938,
+            "posY": 56.66581726074219,
+            "path": "Nodes/Api/Player/GetPlayerNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "6f7f38c0-2f81-4ca4-857c-26e116eeedbc",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "a5b8bce3-9989-42ed-89e4-ba2a3a4f1079",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "2f9836c5-6441-496e-81ed-9ab546d13a8c",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "c2526de0-f123-4211-9f3e-b4ce4f832ac6",
+            "values": [
+                {
+                    "key": "vector3NodesValue",
+                    "value": "-2,3,-4"
+                },
+                {
+                    "key": "type",
+                    "value": "vector3LiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": -1060.060546875,
+            "posY": -63.832763671875,
+            "path": "Nodes/Variable/Vector3/NewVector3LiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "8c7415a9-4de1-4ea4-ba92-a60d34b8036a",
+                    "socketType": "Vector3"
+                }
+            ]
+        },
+        {
+            "id": "0ba56613-8270-47d9-876e-d91a8083ac56",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "defocusCameraNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 1097.9403076171875,
+            "posY": -322.997314453125,
+            "path": "Nodes/Api/Camera/DefocusCameraNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "341473fb-5473-4db6-95e7-97d4a3b548e1",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "8fea2598-7442-49ab-8549-e56a5aa7a345",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "c2c7b473-6e58-4670-b2d5-e8e5bb3a8b81",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getPlayerNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "indexPosValue",
+                    "value": "0"
+                },
+                {
+                    "key": "posaValue",
+                    "value": "Position X"
+                },
+                {
+                    "key": "indexMovValue",
+                    "value": "0"
+                },
+                {
+                    "key": "movValue",
+                    "value": "Allow"
+                }
+            ],
+            "posX": 797.9403076171875,
+            "posY": -336.33062744140627,
+            "path": "Nodes/Api/Player/GetPlayerNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "a2db51c7-48ea-4910-a326-3a0777224f03",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "73ab74e2-3ca6-4b5e-ad84-db5f7ae2ce8b",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "1ff056b8-e285-4da5-a941-0b4b0d52555b",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "3fa2ac20-b77e-42cc-bf3c-efd8dc9ae0d6",
+            "values": [
+                {
+                    "key": "merchantData",
+                    "value": "{\"Name\":\"Black Market\",\"Type\":\"Secret Shop\",\"Greeting\":\"Welcome\",\"Farewell\":\"See you later\",\"ProductToSale\":[\"0\"]}"
+                },
+                {
+                    "key": "type",
+                    "value": "commerceSetAShopNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 1796.273681640625,
+            "posY": 70.33599090576172,
+            "path": "Nodes/Api/Commerce/CommerceSetShopNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "aaa24e4b-7e96-4688-8030-185fb06bf05f",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "b69226f1-6437-446d-8b13-4f77592dc384",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "bd58f055-db3d-4066-a256-e24008eb9191",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getPlayerNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "indexPosValue",
+                    "value": "0"
+                },
+                {
+                    "key": "posaValue",
+                    "value": "Position X"
+                },
+                {
+                    "key": "indexMovValue",
+                    "value": "0"
+                },
+                {
+                    "key": "movValue",
+                    "value": "Allow"
+                }
+            ],
+            "posX": 1741.2733154296875,
+            "posY": -585.497314453125,
+            "path": "Nodes/Api/Player/GetPlayerNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "ed7d5ca7-8cbe-47df-adff-38731d032a16",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "4693487d-4bb1-4d83-8af2-0fca164e327e",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "68932fe5-aad8-4bca-8a82-a39254886f84",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "2e4c6047-f01c-4467-98f4-dfbd675e29f8",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "defocusCameraNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 2011.728515625,
+            "posY": -574.6639404296875,
+            "path": "Nodes/Api/Camera/DefocusCameraNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "69688beb-82b4-4532-aad5-4739a655feae",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "e789837b-83ae-4d8c-abd1-894da1417d3c",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "676361b8-2c32-49bf-8370-afd5e92236a5",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getPlayerNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "indexPosValue",
+                    "value": "0"
+                },
+                {
+                    "key": "posaValue",
+                    "value": "Position X"
+                },
+                {
+                    "key": "indexMovValue",
+                    "value": "0"
+                },
+                {
+                    "key": "movValue",
+                    "value": "Allow"
+                }
+            ],
+            "posX": 3172.1064453125,
+            "posY": -352.1639709472656,
+            "path": "Nodes/Api/Player/GetPlayerNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "69030a26-c0a8-4ef7-b424-2ac64237f898",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "297319a9-b690-4ea3-85a1-86d6e0fc64b7",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "6790cfcc-5f04-40a9-a1f2-e5266ba96461",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "f6a71391-f448-46d3-b209-295456b49d5c",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "defocusCameraNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 3442.561767578125,
+            "posY": -337.9973449707031,
+            "path": "Nodes/Api/Camera/DefocusCameraNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "587e7e11-bd34-4066-8c88-2c747bff9d99",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "57096477-d06c-448e-a6ff-54889657f7a6",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "9209589d-9eb9-45b4-8cc4-7234eb0610fd",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getPlayerNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "indexPosValue",
+                    "value": "0"
+                },
+                {
+                    "key": "posaValue",
+                    "value": "Position X"
+                },
+                {
+                    "key": "indexMovValue",
+                    "value": "0"
+                },
+                {
+                    "key": "movValue",
+                    "value": "Allow"
+                }
+            ],
+            "posX": 4018.77294921875,
+            "posY": -329.6639709472656,
+            "path": "Nodes/Api/Player/GetPlayerNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "43944580-742c-4be8-968d-69d6a311a321",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "ad601f43-6deb-4dc5-aa84-cbe3564904ba",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "781f3a73-5b98-4f88-8aae-feae821c57ec",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "a6e250b9-ad83-4940-bb57-50e4a040b0ee",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "defocusCameraNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 4314.22802734375,
+            "posY": -318.8306884765625,
+            "path": "Nodes/Api/Camera/DefocusCameraNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "5e1e3e12-27b1-4b65-b7e9-a314d8a3e45b",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "42e1cedd-efed-4594-92b2-f0013671ce3c",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "c122a16a-f9d7-4909-b0b0-e9c4557f934e",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getPlayerNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "indexPosValue",
+                    "value": "0"
+                },
+                {
+                    "key": "posaValue",
+                    "value": "Position X"
+                },
+                {
+                    "key": "indexMovValue",
+                    "value": "0"
+                },
+                {
+                    "key": "movValue",
+                    "value": "Allow"
+                }
+            ],
+            "posX": 4991.2724609375,
+            "posY": -321.33062744140627,
+            "path": "Nodes/Api/Player/GetPlayerNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "b4d1dee6-5a91-4928-872d-e9c77cbab1dd",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "e04e7fe6-1a25-44bd-b6e8-0ba4bb097522",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "f4a34f2e-0d90-469c-8173-97a7910b611b",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "a2cab018-c49c-486e-be62-1eeb2a191a39",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "defocusCameraNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 5305.89404296875,
+            "posY": -309.6640319824219,
+            "path": "Nodes/Api/Camera/DefocusCameraNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "849fb2a0-3107-4d9d-b966-be69cff199bf",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "fb7c4ac4-6c20-419f-8452-4ac8836fcfa9",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "34ba2bda-5532-482e-9b0a-0c2c39880d16",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getPlayerNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "indexPosValue",
+                    "value": "0"
+                },
+                {
+                    "key": "posaValue",
+                    "value": "Position X"
+                },
+                {
+                    "key": "indexMovValue",
+                    "value": "0"
+                },
+                {
+                    "key": "movValue",
+                    "value": "Allow"
+                }
+            ],
+            "posX": 5868.77197265625,
+            "posY": -44.66401672363281,
+            "path": "Nodes/Api/Player/GetPlayerNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "475482d5-4ef0-4982-a706-7e60bb1da067",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "67ec84e4-4235-4d4b-b8e3-646acc50d9d2",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "861bcaba-0f17-4f54-9c94-8bd1efb204be",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "8eb0f061-88dd-47af-9433-41c81d87591f",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "defocusCameraNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 6141.7275390625,
+            "posY": -31.33069610595703,
+            "path": "Nodes/Api/Camera/DefocusCameraNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "4f096684-6aea-4b78-8ccd-39c06e4059b1",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "5b83fec1-0b64-43e5-abbf-ff7f021e64c5",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "81d61351-f78c-45a0-bf0b-434cc2994418",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getPlayerNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "indexPosValue",
+                    "value": "0"
+                },
+                {
+                    "key": "posaValue",
+                    "value": "Position X"
+                },
+                {
+                    "key": "indexMovValue",
+                    "value": "0"
+                },
+                {
+                    "key": "movValue",
+                    "value": "Allow"
+                }
+            ],
+            "posX": 2072.93994140625,
+            "posY": 67.83594512939453,
+            "path": "Nodes/Api/Player/GetPlayerNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "6217f0d8-bf8e-40a9-830e-6a7bc1a4df41",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "21b65ce1-7e35-4aa4-9040-edf00f93ec75",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "b5a55551-76a2-460c-b779-d34b0669cd0c",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "99603682-4d9f-4481-874c-8ed16b2554e9",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "defocusCameraNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 2348.395263671875,
+            "posY": 78.66927337646485,
+            "path": "Nodes/Api/Camera/DefocusCameraNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "bbdc0b36-145d-4621-94a0-1357f35856a9",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "505647c1-90e6-4d48-b4d1-7e89d2b468f0",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "c6ac4109-18b1-45c8-8cf1-5f7ecd8aa98b",
+            "values": [
+                {
+                    "key": "stringValue",
+                    "value": "Interact"
+                },
+                {
+                    "key": "type",
+                    "value": "inputButtonMobilelNode"
+                },
+                {
+                    "key": "category",
+                    "value": "event"
+                },
+                {
+                    "key": "refGO",
+                    "value": "This"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "0"
+                }
+            ],
+            "posX": -1066.27099609375,
+            "posY": 59.05467987060547,
+            "path": "Nodes/Event/Input/InputMobileButtonNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "2b05aa1c-7c63-4c7f-ab01-e1e76564afd6",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "7541834f-53c2-4c8b-bdef-c4f424e6f661",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "ee9b0c7c-a745-41cb-b1b7-e75fc465a19c",
+            "values": [
+                {
+                    "key": "intValue",
+                    "value": "100"
+                },
+                {
+                    "key": "type",
+                    "value": "intLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 5001.27099609375,
+            "posY": -212.33583068847657,
+            "path": "Nodes/Variable/Int/NewIntLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "d37d37c6-5c98-453d-92ec-d7bdc09f4fdd",
+                    "socketType": "Data"
+                }
+            ]
+        },
+        {
+            "id": "851478a9-50b8-469a-9b32-f4cb77d69f13",
+            "values": [
+                {
+                    "key": "stringValue",
+                    "value": "You got 100x of Golden Coins"
+                },
+                {
+                    "key": "type",
+                    "value": "stringLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 4702.60302734375,
+            "posY": -211.7501983642578,
+            "path": "Nodes/Variable/String/NewStringLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "efa571bb-c982-44cc-af68-d0b1dcc1bdad",
+                    "socketType": "StringOnly"
+                }
+            ]
+        },
+        {
+            "id": "73eecac9-c320-4697-922d-ca949405db31",
+            "values": [
+                {
+                    "key": "boolData",
+                    "value": "True"
+                },
+                {
+                    "key": "type",
+                    "value": "boolLiteralNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                }
+            ],
+            "posX": 5291.77001953125,
+            "posY": -174.2501983642578,
+            "path": "Nodes/Variable/Bool/NewBoolLiteralNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "19e728f9-5bac-4d6b-a853-aa5f13020fc9",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "07b252e8-5d31-43db-a1dc-b8cce29d7603",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "ifNode"
+                },
+                {
+                    "key": "category",
+                    "value": "control"
+                }
+            ],
+            "posX": 1789.7720947265625,
+            "posY": -287.1675720214844,
+            "path": "Nodes/Control/NewIfNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "73753e54-e951-40dc-9a41-650d38a71a0f",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "07e45a8b-aeca-41f7-8a2e-088d27466ad0",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "e7815d8f-ffef-4db2-981b-ad3e84146ab2",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "97eb5896-8616-4315-b450-f5f2e73c64ab",
+                    "socketType": "Flow2"
+                }
+            ]
+        },
+        {
+            "id": "0046fdd6-a9cc-4381-b36c-922f4e8957ef",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "notificationDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                }
+            ],
+            "posX": 5003.9365234375,
+            "posY": -76.33403015136719,
+            "path": "Nodes/Api/Popup/NewNotificationDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "9b6dba37-c1e4-496d-8ce0-b4332b227c0c",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "65bb91a3-6d66-4553-a021-c96d900da1eb",
+                    "socketType": "StringOnly"
+                },
+                {
+                    "socketId": "7b82d626-7304-46b7-983f-e5b60302452b",
+                    "socketType": "Data"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "6369dbcc-541c-4f7f-ac8e-d74e1ef1cadf",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "fb6dd426-8b64-42bf-880c-e9c318681779",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "standardDialogNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "dialogDataValue",
+                    "value": "{\"type\":\"dialog\",\"dialog\":[{\"name\":\"Black Market Merchant\",\"text\":\"You've completed all of test\"},{\"name\":\"Black Market Merchant\",\"text\":\"Nothing left for you\"}]}"
+                }
+            ],
+            "posX": 2280.76953125,
+            "posY": -317.6637268066406,
+            "path": "Nodes/Api/Dialog/StandardDialogNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "caf06fbb-665b-4efd-9821-a287d076e0c0",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "a6d89c09-347e-4f0b-b3ee-6ac149669199",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "b7b46286-8c55-4448-a710-1d6902b29cc7",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "focusCameraNode"
+                },
+                {
+                    "key": "category",
+                    "value": "api"
+                },
+                {
+                    "key": "refGO",
+                    "value": "This"
+                },
+                {
+                    "key": "objDropdown",
+                    "value": "0"
+                }
+            ],
+            "posX": -780.0615844726563,
+            "posY": -42.334312438964847,
+            "path": "Nodes/Api/Camera/FocusCameraNode",
+            "inputSocketIds": [
+                {
+                    "socketId": "0bc7c373-55e8-4ba9-847f-e42174db2983",
+                    "socketType": "Vector3"
+                },
+                {
+                    "socketId": "d36d1827-becd-49c4-b153-53c969c1422d",
+                    "socketType": "Flow"
+                },
+                {
+                    "socketId": "43176f42-607e-4649-9061-43670e2bfb6e",
+                    "socketType": "Gameobject"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "3d2e34f7-29bc-45e2-ba20-44b8144fbb63",
+                    "socketType": "Flow"
+                }
+            ]
+        },
+        {
+            "id": "1ae95053-2933-4db2-948f-7a34fd428840",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "getGlobalVariableNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "isQuestTest"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "7"
+                }
+            ],
+            "posX": 1486.4388427734375,
+            "posY": -294.83123779296877,
+            "path": "Nodes/Variable/Global/NewGetGlobalVariable",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                {
+                    "socketId": "c6c1c44a-bd1e-4fc6-b8a5-dd6f06161302",
+                    "socketType": "BoolOnly"
+                }
+            ]
+        },
+        {
+            "id": "8d9a195f-df78-4af4-91a2-a8134a4ee410",
+            "values": [
+                {
+                    "key": "type",
+                    "value": "setGlobalVariableNode"
+                },
+                {
+                    "key": "category",
+                    "value": "variable"
+                },
+                {
+                    "key": "dropdownValue",
+                    "value": "isQuestTest"
+                },
+                {
+                    "key": "dropdownIndexValue",
+                    "value": "7"
+                }
+            ],
+            "posX": 5575.3017578125,
+            "posY": -49.831268310546878,
+            "path": "Nodes/Variable/Global/NewSetGlobalVariable",
+            "inputSocketIds": [
+                {
+                    "socketId": "17f37a66-674a-4154-99e6-8c34eb6c5c38",
+                    "socketType": "BoolOnly"
+                },
+                {
+                    "socketId": "67dd135e-4704-4e7e-b7bf-a4333c3d2913",
+                    "socketType": "Flow"
+                }
+            ],
+            "outputSocketIds": [
+                {
+                    "socketId": "1a566b32-4e31-4314-9905-6680b0a5bb8b",
+                    "socketType": "Flow"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "id": "c072dfc1-ce28-417e-a03b-76d63d5e0cf8",
+            "outputSocketId": "a5b8bce3-9989-42ed-89e4-ba2a3a4f1079",
+            "inputSocketId": "4580e6c1-6533-436e-90d3-9c94b18b0364",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "717ff43f-6aa7-459d-be4d-7d73eb1bafc2",
+            "outputSocketId": "3069a48a-b884-4b38-be59-489328670d76",
+            "inputSocketId": "ddd6797e-9f28-4c04-b5bc-c518ba69a56d",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        },
+        {
+            "id": "20db288f-07c1-4170-9625-50682b738ec0",
+            "outputSocketId": "98adf7b1-19c2-4ace-a261-a10f2b251156",
+            "inputSocketId": "15e649e1-3eaf-4c48-8514-a73c22835145",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data2"
+        },
+        {
+            "id": "3177a0e1-a454-4c98-9aad-8c1ce98309c8",
+            "outputSocketId": "5b0c9a71-e821-4e89-88af-bf5f09a74a9d",
+            "inputSocketId": "cc39439c-60db-4f8c-90b0-12b4ffac11c3",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "0cc4d8cc-c885-40e9-81b8-7562dfbb48e7",
+            "outputSocketId": "c89a3eab-09f6-4ee4-99e0-8dd832d38e77",
+            "inputSocketId": "6f7f38c0-2f81-4ca4-857c-26e116eeedbc",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "1c154f07-7a06-43ad-9ca7-63d1331c4dff",
+            "outputSocketId": "c1b6db1d-9729-4549-9052-ea7b1d16c656",
+            "inputSocketId": "d99ddb16-240c-4e2a-a9bf-00dfc9ae9916",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "f2655378-459c-4e12-9145-bcfb4f9de7a3",
+            "outputSocketId": "68c7eeb5-d285-4326-8a51-1f84b8a76936",
+            "inputSocketId": "a1b89f02-f73b-46ad-9acf-dc3bf51bad4f",
+            "outputSocketType": "Flow2",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "632f6380-f233-48bc-ac1b-1749ad803840",
+            "outputSocketId": "a3888517-85fc-41a5-b1ea-5a79b97f121f",
+            "inputSocketId": "a2db51c7-48ea-4910-a326-3a0777224f03",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "d3aa97af-4415-4ed5-81ac-38e41ca5f01b",
+            "outputSocketId": "73ab74e2-3ca6-4b5e-ad84-db5f7ae2ce8b",
+            "inputSocketId": "341473fb-5473-4db6-95e7-97d4a3b548e1",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "fb12a094-d3c0-401d-9603-cd0e4173ac0e",
+            "outputSocketId": "48dbef6f-d3fc-4c52-b6ed-fe353cc413b9",
+            "inputSocketId": "c69ea0e0-e912-422c-8543-d0c4c11497cd",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "59a7b5dd-d46c-4329-9766-d9bbd07cc2f4",
+            "outputSocketId": "0f8dee99-28db-4f00-8fda-2d7931d69f05",
+            "inputSocketId": "3dae8bbc-9e47-4c6f-82b6-21574d7d2d62",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data2"
+        },
+        {
+            "id": "75d360da-261f-423c-b611-678a016f476e",
+            "outputSocketId": "6c490dca-50cb-4b80-bd14-5531ccb18794",
+            "inputSocketId": "e9e26ba4-86f5-436f-8dec-afbeeb45e5d7",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        },
+        {
+            "id": "ec9835c8-1c6d-4446-8bda-16848d7997f6",
+            "outputSocketId": "6c490dca-50cb-4b80-bd14-5531ccb18794",
+            "inputSocketId": "e66ef02e-fcf3-402d-8796-f323aecb60f6",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        },
+        {
+            "id": "cec677c6-44d9-4cba-9e26-7508bbb95104",
+            "outputSocketId": "6c490dca-50cb-4b80-bd14-5531ccb18794",
+            "inputSocketId": "8d381707-da0d-42a7-afb1-83128525fd71",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        },
+        {
+            "id": "f546e316-28ba-4b35-9516-1afe88994160",
+            "outputSocketId": "d51f8467-cb26-4308-918b-60049a66318f",
+            "inputSocketId": "a767dd40-509f-458a-a467-715a3e4e50a8",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data2"
+        },
+        {
+            "id": "76633cac-1a36-4f45-b5eb-57f9f758d0ad",
+            "outputSocketId": "56a3e574-f545-47c0-9593-b9eeca1167c0",
+            "inputSocketId": "b0ffe217-7ec4-4ce5-8ce9-276b4d0b4169",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data2"
+        },
+        {
+            "id": "d3698ef4-33b8-4340-a5a3-31de5ddca017",
+            "outputSocketId": "aebf13e6-30b5-4fcb-b0da-98c1b4b7ad60",
+            "inputSocketId": "73f6b808-ece8-48a7-a11b-7e8630654522",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "f4065a5c-039d-476d-91c5-74a3d421f8ca",
+            "outputSocketId": "dfe2ee3b-8448-4c4b-a80e-ba0daf7341f1",
+            "inputSocketId": "418bb8c6-719d-42f5-8a9f-df63ee97b392",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "f5fd0c55-be54-4f22-9806-cfbf07c21a62",
+            "outputSocketId": "dfe2ee3b-8448-4c4b-a80e-ba0daf7341f1",
+            "inputSocketId": "bb8e3f8e-53c9-45c9-8bf0-72ec3f88f2aa",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "2db3ab55-1513-4f6d-bef6-745d7fda979d",
+            "outputSocketId": "dfe2ee3b-8448-4c4b-a80e-ba0daf7341f1",
+            "inputSocketId": "2c4c588d-1673-4e31-8f64-f67c43b380fa",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "5991bd7f-4ffb-475a-92cf-287cb5e9b7de",
+            "outputSocketId": "cf0b445b-fdac-4cbe-b8b9-12b65b8e9543",
+            "inputSocketId": "8b5ea07d-d70b-42e0-93b5-702095191942",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "3467f865-319d-413d-9665-abfa4c4ec067",
+            "outputSocketId": "037930c5-5cfc-4063-a1c2-911562c89bb0",
+            "inputSocketId": "0ee6033d-982c-4de4-9c62-ae9c99387377",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "707a89fc-ef98-4f9b-8f98-a7324f247803",
+            "outputSocketId": "d61bf6e4-e6ab-41b2-982f-25ced19914b9",
+            "inputSocketId": "aaa24e4b-7e96-4688-8030-185fb06bf05f",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "9c488d93-41c5-47f0-b2b9-f596c438fd4e",
+            "outputSocketId": "c6ceb5af-7b4f-4253-b6ac-ef1e1ee23698",
+            "inputSocketId": "7420da6d-e109-4b55-8d66-dd464b0b7f46",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "72f6d71e-31f7-4fd3-b8f2-c3115fd011dc",
+            "outputSocketId": "e91b3b0a-c737-43b2-9311-9bf05c752f2e",
+            "inputSocketId": "00a7ea0f-68d1-451b-9cd4-60af795b22a2",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "a8a14bce-5947-4cc6-8ef4-0f205cdb54ce",
+            "outputSocketId": "ba706f31-ab7c-48d5-a6cb-06f1c5f7cbde",
+            "inputSocketId": "cba72f35-ca56-459a-a731-e238a1f23b7d",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        },
+        {
+            "id": "9fe8ab0d-ffa6-416f-a9de-eb12ca5dc4c0",
+            "outputSocketId": "14cc4156-120c-4df6-a27f-dbe77615105e",
+            "inputSocketId": "9e4bdd6f-a430-4f74-ae40-cedb861548b1",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data2"
+        },
+        {
+            "id": "93ec6295-f377-4bbd-acc4-911aa25747bd",
+            "outputSocketId": "1a256f03-278a-41fb-90a9-292140a14977",
+            "inputSocketId": "5b8747ea-6866-4521-a988-20c9f2a202fb",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "0395ed46-59e3-4f34-9e7c-c32c6dae4392",
+            "outputSocketId": "99ce2c02-5707-4b2a-8f73-f3f5540b1091",
+            "inputSocketId": "460827fd-eceb-4cca-a144-29b4bed6ad6e",
+            "outputSocketType": "Flow2",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "41e4c75b-7cfb-49ce-b870-6cc8f8682d81",
+            "outputSocketId": "2f5ee746-3b59-49c0-b9b4-44df2fde7714",
+            "inputSocketId": "efc122e7-a1a3-4c73-a67c-6736da90cf92",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data2"
+        },
+        {
+            "id": "005d6eff-9aaf-49ac-ae1d-c57e09ea4c1a",
+            "outputSocketId": "f63dc851-c676-4914-bc0a-da1ce8fe9a5d",
+            "inputSocketId": "a27bb6c5-9e99-402f-b1c0-b71a4c356179",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        },
+        {
+            "id": "4124eb0d-b223-4633-9c25-037f43e35666",
+            "outputSocketId": "2a7ee367-738b-4c90-8b6b-ca90cae17d2c",
+            "inputSocketId": "ed7d5ca7-8cbe-47df-adff-38731d032a16",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "601db2f7-1a97-403e-94f7-c998978af6a3",
+            "outputSocketId": "4693487d-4bb1-4d83-8af2-0fca164e327e",
+            "inputSocketId": "69688beb-82b4-4532-aad5-4739a655feae",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "4e35d886-161b-46db-b5b7-012159d31d80",
+            "outputSocketId": "e668cdf8-4bb5-46d7-b298-1cfdeee831cc",
+            "inputSocketId": "378fb1bb-7a79-467d-aeca-c022ac11d3e1",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "ae048914-dc84-42a4-8dac-f5a315e500e5",
+            "outputSocketId": "5f772760-23ec-4b8a-bd73-eff9ac377f98",
+            "inputSocketId": "f434274c-2479-4f24-a49a-c3e70e5dfcc2",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "cd086d73-0269-491c-8abc-8b25111f9710",
+            "outputSocketId": "b42b4291-59c6-4d3c-b444-07341e5a7e30",
+            "inputSocketId": "72532b4d-2e9a-430f-9c40-984492efc9f3",
+            "outputSocketType": "Flow2",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "d72ee392-c327-4010-a04e-112cfdf44871",
+            "outputSocketId": "80f470be-26b2-4132-bdcb-888cab524dd6",
+            "inputSocketId": "69030a26-c0a8-4ef7-b424-2ac64237f898",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "48f44d38-e4da-4c6b-bd66-6dc39cea205e",
+            "outputSocketId": "297319a9-b690-4ea3-85a1-86d6e0fc64b7",
+            "inputSocketId": "587e7e11-bd34-4066-8c88-2c747bff9d99",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "8f888fc1-355f-4680-b95d-3345f640b21e",
+            "outputSocketId": "50755f4b-3013-4d34-bfff-d299cedca502",
+            "inputSocketId": "43944580-742c-4be8-968d-69d6a311a321",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "efcd46b0-2c52-4571-8f44-c0c388985e42",
+            "outputSocketId": "ad601f43-6deb-4dc5-aa84-cbe3564904ba",
+            "inputSocketId": "5e1e3e12-27b1-4b65-b7e9-a314d8a3e45b",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "9ec0b43e-c31b-472f-997f-6a2b043b0a65",
+            "outputSocketId": "02960382-2ccb-4af9-8cd9-5821ba8ed661",
+            "inputSocketId": "1299d58e-2c90-4844-b2ea-bbf5d9cb9798",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "767b73f0-62f9-40c4-a96c-2d98da52d873",
+            "outputSocketId": "180d0c55-f5bc-4290-a689-5dc618fcba5d",
+            "inputSocketId": "c8a147fe-7c93-442b-896c-cae751255c52",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data2"
+        },
+        {
+            "id": "bc6e8f71-736e-49ca-b155-123cc7863e74",
+            "outputSocketId": "14feabc4-c350-4a65-8512-02e7a192f749",
+            "inputSocketId": "16cfd229-d811-4b64-abb0-dca9c73eeb05",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        },
+        {
+            "id": "8586a5ad-5fa1-4171-a6d4-121319228157",
+            "outputSocketId": "e9bd8382-7c28-4310-8978-4b0bb51f24a7",
+            "inputSocketId": "86b5f906-bbe3-41da-a13f-d338379f343e",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "4103d348-39b8-4144-87bb-66c24c34daaa",
+            "outputSocketId": "1468925a-8a63-4baf-bfa7-bbd2cc6f8952",
+            "inputSocketId": "0b8ad189-47d2-49d3-b83f-6f383692b155",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "626e8f7e-7577-4f67-a85b-1927151e5720",
+            "outputSocketId": "da98bf22-a38d-4fa9-988e-e6bda46aa40f",
+            "inputSocketId": "21a94e7a-ea1f-4010-ac0b-ed9d72ebffbc",
+            "outputSocketType": "Flow2",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "1a5f3add-afbc-45d6-b5b1-fed2e9aa181f",
+            "outputSocketId": "405cac9b-4671-47ee-b1a7-c1e4c7ac116c",
+            "inputSocketId": "b4d1dee6-5a91-4928-872d-e9c77cbab1dd",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "d6765442-1797-4256-8f05-6d48030a25c3",
+            "outputSocketId": "e04e7fe6-1a25-44bd-b6e8-0ba4bb097522",
+            "inputSocketId": "849fb2a0-3107-4d9d-b966-be69cff199bf",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "08ec7843-5c37-4b17-92bc-5a35163517d3",
+            "outputSocketId": "67ec84e4-4235-4d4b-b8e3-646acc50d9d2",
+            "inputSocketId": "4f096684-6aea-4b78-8ccd-39c06e4059b1",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "1b347b33-25f5-4d20-85cc-beaf98e1c84f",
+            "outputSocketId": "3809e094-fc4f-4cfc-8ec0-7a1f93170ed6",
+            "inputSocketId": "6d36db6a-af85-4b83-b937-91bef868cb96",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "fae495df-1551-400f-8cc1-27bb7cc7f35e",
+            "outputSocketId": "1b6da56b-b9a2-4ad9-b1e2-5d655d1567c8",
+            "inputSocketId": "919ca7b9-7b71-4095-884a-f233e3e026da",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "4f28760b-00e9-45fd-8386-d36efce5aaf5",
+            "outputSocketId": "b69226f1-6437-446d-8b13-4f77592dc384",
+            "inputSocketId": "6217f0d8-bf8e-40a9-830e-6a7bc1a4df41",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "d3cef04d-e9e2-4677-943f-da84394c95dc",
+            "outputSocketId": "21b65ce1-7e35-4aa4-9040-edf00f93ec75",
+            "inputSocketId": "bbdc0b36-145d-4621-94a0-1357f35856a9",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "d009214b-23b7-4700-9964-aa4a0b23afdf",
+            "outputSocketId": "d37d37c6-5c98-453d-92ec-d7bdc09f4fdd",
+            "inputSocketId": "005bb5ef-3156-482b-9015-be8e85d641ab",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        },
+        {
+            "id": "18771bae-9f51-48c7-a50b-277a2e094454",
+            "outputSocketId": "97eb5896-8616-4315-b450-f5f2e73c64ab",
+            "inputSocketId": "7baf82bb-65ed-4328-aadd-fc135fed54aa",
+            "outputSocketType": "Flow2",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "d8a022cb-0ec4-42ab-a283-5e9c7afecd51",
+            "outputSocketId": "f5ed1252-58b0-462d-81c5-13b37c520e74",
+            "inputSocketId": "9b6dba37-c1e4-496d-8ce0-b4332b227c0c",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "e99d98ff-9480-40a7-8ac6-d68cd0235641",
+            "outputSocketId": "efa571bb-c982-44cc-af68-d0b1dcc1bdad",
+            "inputSocketId": "65bb91a3-6d66-4553-a021-c96d900da1eb",
+            "outputSocketType": "StringOnly",
+            "inputSocketType": "StringOnly"
+        },
+        {
+            "id": "f69543f9-07e9-436a-8ece-d56e4562d17c",
+            "outputSocketId": "6369dbcc-541c-4f7f-ac8e-d74e1ef1cadf",
+            "inputSocketId": "ddd450ba-febe-42ac-aa58-65b86c14e94c",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "fb647911-a7a7-4e14-a647-772b5f13833c",
+            "outputSocketId": "e7815d8f-ffef-4db2-981b-ad3e84146ab2",
+            "inputSocketId": "caf06fbb-665b-4efd-9821-a287d076e0c0",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "1182cbe1-0cde-4a48-a528-c6dc3c6eae4f",
+            "outputSocketId": "",
+            "inputSocketId": "7b82d626-7304-46b7-983f-e5b60302452b",
+            "outputSocketType": "Data",
+            "inputSocketType": "Data"
+        },
+        {
+            "id": "636923c9-b5a1-43ba-aef1-136990db88cd",
+            "outputSocketId": "a6d89c09-347e-4f0b-b3ee-6ac149669199",
+            "inputSocketId": "ed7d5ca7-8cbe-47df-adff-38731d032a16",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "cbc02ed5-f5d0-4fdf-bf5d-17294432c64f",
+            "outputSocketId": "7541834f-53c2-4c8b-bdef-c4f424e6f661",
+            "inputSocketId": "7f077974-cbb6-40b2-b908-fe8cf7887e4b",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "534ae1d4-7a20-4ace-a3a0-76e3c0eb444b",
+            "outputSocketId": "7541834f-53c2-4c8b-bdef-c4f424e6f661",
+            "inputSocketId": "d36d1827-becd-49c4-b153-53c969c1422d",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "2e829691-7b3a-4c00-9815-3fd361e3c7ef",
+            "outputSocketId": "8c7415a9-4de1-4ea4-ba92-a60d34b8036a",
+            "inputSocketId": "0bc7c373-55e8-4ba9-847f-e42174db2983",
+            "outputSocketType": "Vector3",
+            "inputSocketType": "Vector3"
+        },
+        {
+            "id": "a6d7aa40-a768-4a4b-bc94-cd4bd3e1a841",
+            "outputSocketId": "d95ed59b-b5b8-4216-ac49-7d94b0646b27",
+            "inputSocketId": "07e45a8b-aeca-41f7-8a2e-088d27466ad0",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "47c89235-9fc6-4826-9eff-bb3ae8cf697c",
+            "outputSocketId": "c6c1c44a-bd1e-4fc6-b8a5-dd6f06161302",
+            "inputSocketId": "73753e54-e951-40dc-9a41-650d38a71a0f",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "d9dbe409-d748-4972-9d96-0609f584d9bb",
+            "outputSocketId": "4953a5f9-5147-4a48-b626-a5ddc965516d",
+            "inputSocketId": "67dd135e-4704-4e7e-b7bf-a4333c3d2913",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        },
+        {
+            "id": "df44e325-541f-43f8-b631-f7e787c3f73e",
+            "outputSocketId": "19e728f9-5bac-4d6b-a853-aa5f13020fc9",
+            "inputSocketId": "17f37a66-674a-4154-99e6-8c34eb6c5c38",
+            "outputSocketType": "BoolOnly",
+            "inputSocketType": "BoolOnly"
+        },
+        {
+            "id": "21ecca35-4dc4-4007-ae7c-f56fc294d5c9",
+            "outputSocketId": "1a566b32-4e31-4314-9905-6680b0a5bb8b",
+            "inputSocketId": "475482d5-4ef0-4982-a706-7e60bb1da067",
+            "outputSocketType": "Flow",
+            "inputSocketType": "Flow"
+        }
+    ]
+}
+BlackMarket=
